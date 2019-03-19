@@ -24,9 +24,5 @@ def scraper(link):
         pairs.append((link.attrs['href'], link.attrs['title']))
     return pairs
 
-def remove_withs(tree):
-    tree.find()
-
-
 if __name__ == "__main__":
     scraper('https://digimon.fandom.com/wiki/Omnimon')
